@@ -1,3 +1,15 @@
+import random
+terms=["LAN"]
+definition=["This is the definiton of LAN"]
+
+def start_quiz(terms, definitions):
+    choice="y"
+    while choice=="y":
+        randomPosition=random.randint(0, len(terms)-1)
+        print(terms[randomPosition])
+        input("Press enter to continue")
+        print(definition[randomPosition])
+
 def showMenu():
     print("1. Start Quiz or 2. Exit")
     userInput=input("Enter options:")
